@@ -18,24 +18,26 @@
 <meta name="description" content="聚焦互联网前沿资讯，网络精华内容，交流产品心得。 每天为你速递最新、最鲜、最有料的互联网科技资讯！">
 </head>
 
-<body class="home blog site-layout-2">
+    <body class="home blog site-layout-2">
 
-    <!-- 头部 -->
-    <header class="fix-wrap" id="fix-wrap">
-        <div class="fix-main clearfix pr" id="fix-main" _hover-ignore="1"> <a href="/" class="index-logo">
-            <img src="{% get_static_prefix %}picture/black-logo.png" alt="拓普Python学院,Python!"></a>
-        <nav class="nav fl">
-        <ul id="fix-list" class="fix-list clearfix">
+        <!-- 头部 -->
+        <header class="fix-wrap" id="fix-wrap">
+            <div class="fix-main clearfix pr" id="fix-main" _hover-ignore="1"> 
+                <a href="/" class="index-logo">
+                    <img src="{% get_static_prefix %}picture/black-logo.png" alt="信息互通">
+                </a>
+                <nav class="nav fl">
+                    <ul id="fix-list" class="fix-list clearfix">
 
-            <li id="menu-item-24086" class="menu-item"><a href="/">首页</a></li>
-            {% for category in allcategory %}
-                <li id="menu-item-117720" class="menu-item">
-                <a href="{% url 'list' lid=category.id %}">{{ category.name }}</a>
-                </li>
-            {% endfor %}
-            <li id="menu-item-24086" class="menu-item"><a href="/about/">关于博主</a></li>
-            </ul>
-            </nav>
+                        <li id="menu-item-24086" class="menu-item"><a href="/">首页</a></li>
+                        {% for category in allcategory %}
+                            <li id="menu-item-117720" class="menu-item">
+                            <a href="{% url 'list' lid=category.id %}">{{ category.name }}</a>
+                            </li>
+                        {% endfor %}
+                        <li id="menu-item-24086" class="menu-item"><a href="/about/">关于博主</a></li>
+                    </ul>
+                </nav>
                 <form method="get" class="index-search  hidden-xs" action="{% url 'search' %}" >
                     <input class="text" name="search" type="text" placeholder="输入关键字" value="">
                     <button class="submit" type="submit"><i class="fa fa-search"></i></button>
@@ -46,9 +48,9 @@
         {% endblock %}
         <!-- 底部 -->
         <footer class="footer">
-            <div class="copyright"> © 2010- 2018 · All Rights Reserved
-                · <a href="https://www.django.cn">Django中文网</a>
-                · <a href="http://www.miibeian.gov.cn" target="_blank">湘ICP备17023990号</a> 版权所有 © Django中文网
+            <div class="copyright"> © 2010- 2020 · All Rights Reserved
+                · <a href="">灵丘信息互通网</a>
+                · <a href="" target="_blank">晋ICP备17023990号</a> 版权所有 © 灵丘信息互通网
             </div>
         </footer>
         <!-- <script src="{% get_static_prefix %}js/bundle.js"></script> -->

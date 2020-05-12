@@ -113,7 +113,7 @@ zoom: 1; vertical-align: top; max-width: 100px; }
 .index-login a:last-child { margin-right: 10px; }
 .index-search { float: right; position: relative; display: block; *width:205px;
 height: 32px; margin-top: 1px; margin-right: 10px; }
-.index-search input { background-color: #F1F1F1; background-color: rgba(241,241,241,.2); filter: alpha(opacity=40); border: 1px solid rgba(204, 204, 204, .5); line-height: 20px; padding: 5px 40px 5px 10px; vertical-align: top; border-radius: 2px; }
+.index-search input { background-color: #F1F1F1; background-color: rgba(241,241,241,.2); filter: alpha(opacity=40); border: 1px solid rgba(204, 204, 204, .5); line-height: 20px; padding: 5px 0px 5px 10px; vertical-align: top; border-radius: 2px; }
 .index-search input:focus { background-color: rgba(241,241,241,.3); }
 .index-search-btn { position: absolute; width: 32px; height: 32px; right: 0; top: 0; background-position: 8px 8px; background-repeat: no-repeat; }
 .fix-wrap .submit { height: 32px; line-height: 32px; }
